@@ -1,0 +1,253 @@
+```css
+/* =========================
+   CONFIGURAÇÕES GERAIS
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #111 0px,
+            #111 10px,
+            #151515 10px,
+            #151515 20px
+        );
+
+    color: #ddd;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   PÁGINA
+   ========================= */
+
+.page {
+    width: 900px;
+    max-width: 95%;
+
+    margin: 30px auto;
+
+    background: #1b1b1b;
+
+    border: 3px double #777;
+
+    box-shadow:
+        8px 8px 0 #000;
+}
+
+
+/* =========================
+   CABEÇALHO
+   ========================= */
+
+header {
+    padding: 25px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            #222,
+            #444,
+            #222
+        );
+
+    border-bottom: 2px solid #777;
+}
+
+header h1 {
+    margin: 0;
+
+    font-size: 36px;
+
+    color: white;
+
+    text-shadow:
+        2px 2px #000;
+}
+
+header p {
+    margin-bottom: 0;
+
+    color: #aaa;
+}
+
+
+/* =========================
+   MENU
+   ========================= */
+
+nav {
+    padding: 10px;
+
+    text-align: center;
+
+    background: #080808;
+
+    border-bottom: 1px solid #555;
+}
+
+nav a {
+    margin: 0 12px;
+
+    color: #7cff7c;
+
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CONTEÚDO
+   ========================= */
+
+main {
+    display: grid;
+
+    grid-template-columns: 230px 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+aside {
+    padding: 15px;
+
+    background: #101010;
+
+    border: 1px solid #555;
+
+    text-align: center;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border: 2px solid #777;
+}
+
+aside h2 {
+    margin-bottom: 5px;
+
+    color: #7cff7c;
+}
+
+.status {
+    margin-top: 20px;
+
+    padding: 10px;
+
+    background: #050505;
+
+    border: 1px dashed #666;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   SEÇÕES
+   ========================= */
+
+article {
+    margin-bottom: 20px;
+
+    padding: 18px;
+
+    background: #151515;
+
+    border: 1px solid #444;
+}
+
+article h2 {
+    margin-top: 0;
+
+    color: #7cff7c;
+
+    border-bottom: 1px dashed #555;
+
+    padding-bottom: 8px;
+}
+
+article a {
+    color: #7cff7c;
+}
+
+
+/* =========================
+   MÚSICA
+   ========================= */
+
+.music {
+    padding: 15px;
+
+    background: #050505;
+
+    border: 1px solid #555;
+
+    color: #fff;
+}
+
+
+/* =========================
+   RODAPÉ
+   ========================= */
+
+footer {
+    padding: 15px;
+
+    text-align: center;
+
+    background: #080808;
+
+    border-top: 2px solid #555;
+
+    font-size: 12px;
+
+    color: #888;
+}
+
+
+/* =========================
+   CELULAR
+   ========================= */
+
+@media (max-width: 700px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .page {
+        width: 95%;
+    }
+
+}
+```
